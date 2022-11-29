@@ -1,0 +1,14 @@
+CACHE MANIFEST
+
+CACHE:
+dist/index.html
+dist/orkney-regular-webfont.woff
+dist/orkney-regular-webfont.woff2
+
+NETWORK:
+*
+
+SETTINGS:
+prefer-online
+
+# hash: d4591f275a727203ab5639ecc499939a816056bfe3e1479dbe5bdfe362d5e4e4

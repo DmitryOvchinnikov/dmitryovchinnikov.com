@@ -1,0 +1,39 @@
+{
+  "name": "dmitryovchinnikov.com",
+  "version": "1.0.0",
+  "description": "Home page of Dmitry Ovchinnikov, web designer and developer",
+  "main": "main.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "/Users/dmitryovchinnikov/web/dmitryovchinnikov.com"
+  },
+  "keywords": [
+    "gulp",
+    "gulpfriendly"
+  ],
+  "author": "Dmitry Ovchinnikov",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.17.3",
+    "browserify": "^13.1.0",
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-buffer": "0.0.2",
+    "gulp-cachebust": "0.0.6",
+    "gulp-concat": "^2.6.0",
+    "gulp-favicons": "^2.2.6",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-manifest": "^0.1.1",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "minimist": "^1.2.0",
+    "run-sequence": "^1.2.2",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "vivus": "^0.3.2"
+  }
+}

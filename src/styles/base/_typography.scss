@@ -1,0 +1,96 @@
+// base/typography.scss
+// ====================
+
+
+/** 
+*  Font face
+*/
+
+@font-face {
+    font-family: 'orkneyregular';
+    src: url('orkney-regular-webfont.woff2') format('woff2'),
+         url('orkney-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/** 
+*	 RWD Font Size
+*/
+
+html { font-size: calc(1em + 1vw); }	// screen < 800px
+
+@media screen and (min-width: 50em) {	// 800px < screen < 1200px
+  html {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (min-width: 75em) {	// 1200px < screen
+  html {
+    font-size: 1.5em;
+  }
+}
+
+
+/** 
+*	 Font for project
+*/
+
+
+$fontSize: calc(1em + 1vw);
+$lineHeight: 1.5;
+
+
+
+p {
+	font-family: 'orkneyregular',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+	color: $text;
+	font-style: normal;
+	font-size: $fontSize;
+	line-height: $lineHeight;
+	margin-bottom: 1em;
+}
+
+a {	
+	text-decoration: none;
+	
+	@include links($link, $visited, $hover, $active);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//================================================================================
+
+body {
+  /* The Browser makes its best guess with its own rendering engine */
+  /* results will vary based on the browser */
+  text-rendering: auto;
+
+  /* The Browser chooses page speed over font calculations and legibility */
+  text-rendering: optimizeSpeed;
+
+  /* The Browser chooses legibility over font calculations and page speed */
+  text-rendering: optimizeLegibility;
+
+  /* The Browser chooses exact font calculations over page speed and legibility */
+  text-rendering: geometricPrecision;
+}
+

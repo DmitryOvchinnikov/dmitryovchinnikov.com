@@ -1,0 +1,44 @@
+// utils/variables.scss
+// ====================
+
+
+/**
+*  Colors
+*/
+
+$colorOne: #95ADA0; // textDark
+
+$colorTwo: #D2DBC0; // background color
+
+$colorThree: #1A3440; // linkActive
+
+$colorFour: #456573; // linkHover
+
+$colorFive: #DECFE2; // linkVisited
+
+$colorSix: #FFFFFF; // text (white)
+
+
+$text: $colorSix;
+$textDark: $colorOne;
+
+$link: $colorThree;
+$active: $colorSix;
+$hover: $colorFour;
+$visited: $colorFive;
+
+$bkg: $colorTwo;
+
+
+
+
+
+
+
+
+
+
+
+
+
+

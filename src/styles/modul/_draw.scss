@@ -1,0 +1,71 @@
+// modul/draw.scss
+// ===============
+
+
+p svg {
+	display: inline-block;
+	position: relative;
+	
+//	margin: 0 0.1em;
+}
+
+svg path {
+	stroke-linejoin:round;
+	stroke:$textDark;
+	fill:none;
+	stroke-width:2;
+}
+
+.wh_line {
+	stroke:$text;
+}
+
+
+/**
+*	 1. positions handwrites in strings
+*  2. responsible size
+*/
+$word: 10em; /* 2 */
+
+#svgDmitryOvchinnikov { 
+	width: $word; /* 2 */
+																				top: calc((1em + 1vw)*0.85); 		// screen < 416px						 /* 1 */
+	@media screen and (min-width: 26em) {	top: calc((1em + 1vw)*0.60); }  // 416px < screen < 800px    /* 1 */
+	@media screen and (min-width: 50em) {	top: calc((2vw)*1.2); } 				// 800px < screen < 1056px   /* 1 */
+	@media screen and (min-width: 66em) {	top: calc((2vw)*1.0); } 			// 1056px < screen < 1200px  /* 1 */
+	@media screen and (min-width: 75em) {	top: calc((1.5em)*0.35); } 			// 1200px < screen					 /* 1 */
+}
+
+
+#svgDesign { 
+	width: ($word*125/333); /* 2 */
+																				top: calc((1em + 1vw)*0.6); 		// screen < 416px						 /* 1 */
+	@media screen and (min-width: 26em) {	top: calc((1em + 1vw)*0.40); }  // 416px < screen < 800px    /* 1 */
+	@media screen and (min-width: 50em) {	top: calc((2vw)*0.9); } 				// 800px < screen < 1056px   /* 1 */
+	@media screen and (min-width: 66em) {	top: calc((2vw)*0.6); } 			// 1056px < screen < 1200px  /* 1 */
+	@media screen and (min-width: 75em) {	top: calc((1.5em)*0.2); } 			// 1200px < screen					 /* 1 */
+}
+
+#svgCoding { 
+	width: ($word*125/333); /* 2 */
+																				top: calc((1em + 1vw)*0.42); 		// screen < 416px						 /* 1 */
+	@media screen and (min-width: 26em) {	top: calc((1em + 1vw)*0.30); }  // 416px < screen < 800px    /* 1 */
+	@media screen and (min-width: 50em) {	top: calc((2vw)*0.7); } 				// 800px < screen < 1056px   /* 1 */
+	@media screen and (min-width: 66em) {	top: calc((2vw)*0.5); } 			// 1056px < screen < 1200px  /* 1 */
+	@media screen and (min-width: 75em) {	top: calc((1.5em)*0.15); } 			// 1200px < screen					 /* 1 */
+}
+
+#svgWebTech,
+#svgHere1,
+#svgHere2,
+#svgHere3,
+#svgEmail { 
+	width: ($word*125/333); /* 2 */
+																				top: calc((1em + 1vw)*0.3); 		// screen < 416px						 /* 1 */
+	@media screen and (min-width: 26em) {	top: calc((1em + 1vw)*0.15); }  // 416px < screen < 800px    /* 1 */
+	@media screen and (min-width: 50em) {	top: calc((2vw)*0.3); } 				// 800px < screen < 1056px   /* 1 */
+	@media screen and (min-width: 66em) {	top: calc((2vw)*0.25); } 			// 1056px < screen < 1200px  /* 1 */
+	@media screen and (min-width: 75em) {	top: calc((1.5em)*0.09); } 			// 1200px < screen					 /* 1 */
+}
+
+

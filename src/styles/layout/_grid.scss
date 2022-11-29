@@ -1,0 +1,23 @@
+// layout/grid.scss
+// ================
+
+
+
+main {
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+	
+	
+	min-height: 100vh;
+
+}
+
+
+section {
+	@include clearfix;
+	
+	max-width: 42em;
+	margin: 1em;
+}
